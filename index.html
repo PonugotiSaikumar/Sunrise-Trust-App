@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trust Website</title>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="data:image/jpeg;base64,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
+      AEAQBAEAQBAEAQBAf//Z"></a><b>SUNRISE TRUST</b>
+        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="/home.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Team</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Sponsership</a>
+				</li>
+        <li class="nav-item">
+					<a class="nav-link" href="/gallery.html">Gallery</a>
+				</li>
+        <li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!--- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel" data-aos="fade-up"
+		data-aos-offset="10"
+		data-aos-delay="10"
+		data-aos-duration="1000">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1" class="active"></li>
+		<li data-target="#slides" data-slide-to="2" class="active"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img class="image" src="https://lifesong.org/site/wp-content/uploads/2022/07/hero-image-desktop.jpg" height="100%" width="100%">
+			<div class="carousel-caption">
+				<h1 class="display-2">Sunrise Trust</h1>
+				<h3>Let's Be The Reason For Someone's Smile</h3>
+			
+				<a href="/donate.html" class="btn btn-primary btn-lg">DONATE US</a>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img class="image" src="https://scontent.fhyd7-1.fna.fbcdn.net/v/t31.18172-8/10694319_1486490778280968_2204040264005914135_o.jpg?_nc_cat=108&ccb=1-7&_nc_sid=be3454&_nc_ohc=d3fk9NvGoB0AX9w6q1B&_nc_ht=scontent.fhyd7-1.fna&oh=00_AfACCh_x6UrpbOb4axE_RF_tFq5GmxxUUjeA1y0kyROmJw&oe=6565E0F5" height="100%" width="100%" >
+      <div class="carousel-caption">
+				<h1 class="display-2">Sunrise Trust</h1>
+				<h3>Let's Be The Reason For Someone's Smile</h3>
+			
+				<a href="/donate.html" class="btn btn-primary btn-lg">DONATE US</a>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img class="image" src="https://www.gujaratsahay.org/wp-content/uploads/2022/03/child-orphanage-in-ahmedabad.png" height="100%" width="100%">
+      <div class="carousel-caption">
+				<h1 class="display-2">Sunrise Trust</h1>
+				<h3>Let's Be The Reason For Someone's Smile</h3>
+			
+				<a href="/donate.html" class="btn btn-primary btn-lg">DONATE US</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--- Jumbotron -->
+<div class="container-fluid" data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="50"
+		data-aos-duration="1000">
+	<div class="row jumbotron">
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+			<p class="lead">The main Goal of the foundation is to look after Orphans and Needy People.</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+			<a href="/donate.html"><button type="button" class="btn btn-outline-secondary
+			btn-lg">Donate Us</button></a>
+		</div>
+	</div>
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid padding" data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="50"
+		data-aos-duration="1000">
+	<div class="row padding">
+		<div class="col-md-12 col-lg-6">
+			<h2 font-style="bold">Motivation</h2><br>
+			<p>"Sunrise Trust " is a Non-Governmental Organization (NGO) started in 2013 and Registered with 738. Currently we are working with 4 projects:<br>
+
+				<b>ORPHANAGE :</b> Providing Food,Shelter and Education to the Orphans who are underprivileged ,as now with 40 kids.<br><br>
+				<b>OLDAGE HOME : </b>Giving Shelter and taking care to the Elder People who are uncared in the society.<br><br>
+				<b>ANNADATHA :</b> providing Free FOOD which is quality to the needy in the society.<br><br>
+				<b>BALIKA VIDHYA VIKAS :</b> providing EDUCATION to the Girl Child in Telangana & Andhra pradesh who are not able to study with the poor Background; as now with 24 girls.
+				Currently our we are doing our Annadatha project in Hyderabad & Bellampalli.</p>
+			
+
+		</div>
+		<div class="col-lg-6">
+			<img src="https://images.mid-day.com/images/images/2022/nov/homealone-six-nov-a_d.jpg" class="img" width="100%" height="100%">
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+<!--- Our Services -->
+<div class="container-fluid padding"data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="50"
+		data-aos-duration="1000">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-3">Our Causes</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<p class="lead">The Sunrise Trust is a non profit organisation and was started with the objective to provide solution to the orphans. This is to be achieved by providing them with free basic school education, healthy home atmosphere, guiding these children towards understanding the need for healthy living and secure a place for them among the rest of the society.</p>
+		</div>
+	</div>
+</div>
+
+<!--- Three Column Section -->
+<div class="container-fluid padding"data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="50"
+		data-aos-duration="1000">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+      <img class="img" src="https://www.unicef.org/sites/default/files/styles/hero_tablet/public/Hero%20-%20Transforming%20Education%20%2811%29.jpg?itok=5d6Ltxyr" width="100%" height="63%">
+			<i class="#"></i>
+			<h3>EDUCATION</h3>
+			<p>Sunrise Trust Foundation is dedicated to Provide training to fulfill the aims and objectives to make the Orphan Children Independent.</p><br>
+      <a href="#" class="btn btn-outline-secondary">READ MORE</a>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+      <img class="img" src="https://m.economictimes.com/thumb/msid-78825631,width-1200,height-900,resizemode-4,imgsize-905138/swachh-bharat-mission-giving-annual-benefits-of-over-rs-53000-per-household-study.jpg" width="100%" height="63%">
+			<i class="#"></i>
+			<h3>SWACHH BHARATH</h3>
+			<p>Prime Minister Shri Narendra Modi exhorted people to fullfill Mahatma Gandhi's vision of Clean India.</p><br><br>
+      <a href="#" class="btn btn-outline-secondary">READ MORE</a>
+		</div>
+		<div class="col-xs-12 col-md-4">
+      <img class="img" src="https://indiannavy.nic.in/sites/default/files/news_slide_images/WhatsApp%20Image%202023-06-11%20at%2008.08.13%281%29.jpeg" width="100%" height="63%">
+			<i class="#"></i>
+			<h3>YOGA TRAINING</h3>
+			<p>You are truly healthy when you are not just physically fit but also mentally and emotionally balanced.</p><br><br>
+      <a href="#" class="btn btn-outline-secondary">READ MORE</a>
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+<!--- Our Programs -->
+<div class="container-fluid padding"data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="50"
+		data-aos-duration="1000">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-3">Our Programs</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			
+		</div><p class="lead">The Orphanage Outreach Program is designed to reach orphans ages 5 to 15. Our team visits orphanages in their area weekly providing the kids with much-needed love and attention, and teaching them about Christ through the building of relationships, music, and fun activities!</p>
+	</div>
+</div>
+
+<!--- Three Column Section -->
+<div class="container-fluid padding"data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="50"
+		data-aos-duration="1000">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+      <img class="img" src="https://i1.wp.com/www.khushiyan.org/wp-content/uploads/2016/10/DSC_0335-01_wm_wm-1024x682.jpg?resize=1024%2C682" width="100%" height="63%">
+			<i class="#"></i>
+			<h3>DIWALI FESTIVAL</h3>
+			<p>During Diwali, our children decorate the orphanage with beautiful diyas (earthen lamps) and Rangoli (colorful patterns made from colored powder). They also enjoy dressing up in new clothes, exchanging sweets and gifts, and lighting firecrackers.</p>
+      <a href="#" class="btn btn-outline-secondary">READ MORE</a>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+      <img class="img" src="https://www.globalgiving.org/pfil/14990/ph_14990_51831.jpg" width="100%" height="63%">
+			<i class="#"></i>
+			<h3>KARATE TRAINING</h3>
+			<p>Karate training develops agility, strength and speed, allowing for fast and effective techniques while also improving muscle tone and endurance. Working both the hands and feet, and left and right sides equally, it develops mental and physical coordination, as well as flexibility.</p>
+      <a href="#" class="btn btn-outline-secondary">READ MORE</a>
+		</div>
+		<div class="col-xs-12 col-md-4">
+      <img class="img" src="https://www.artofliving.org/sites/www.artofliving.org/files/styles/original_image/public/landing_page_uploads/full_carousel/tree%20planting%20hero%20desktop.jpg?itok=5NOzV9qv" width="100%" height="63%">
+			<i class="#"></i>
+			<h3>TREE PLANTATION</h3>
+			<p>Tree plantation is very necessary because trees provide oxygen to the environment and make the air quality better. If more trees are planted, then the world's environment will become a safer place to live in. </p><br>
+      <a href="#" class="btn btn-outline-secondary">READ MORE</a>
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid padding"data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="50"
+		data-aos-duration="1000">
+	<div class="row padding">
+		<div class="col-md-12 col-lg-6">
+			<h2>Sponser Us</h2><br>
+			<p>Our model of care goes beyond rescue and survival. We are committed to restoring and equipping each child to break the cycle of poverty. In Bolivia your child sponsorship support helps to pay for much more than just food and shelter. It helps pay for the basics and much more:<br><br>
+
+			    <b>></b> 3 daily balanced meals.<br>
+				<b>></b> Safe, clean, cozy housing where each child can personalize their space.<br>
+				<b>></b> Medical, dental and, psychiatric care as needed.<br>
+				<b>></b> Therapy provided by trauma informed psychologists.<br>
+				<b>></b> Trauma informed staff.</p>
+			
+				<br>
+				<a href="#" class="btn btn-primary">Know More</a>
+		</div>
+		<div class="col-lg-6">
+			<img src="https://www.globalgiving.org/pfil/14810/ph_14810_50896.jpg" width="100%" height="90%" class="img">
+		</div>
+	</div>
+</div>
+
+<hr class="my-4">
+
+
+<!--- Meet the team -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">The Causes We Care About</h1>
+		</div>
+	</div>
+</div>
+
+<!--- Cards -->
+<div class="container-fluid padding" data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="50"
+		data-aos-duration="1000">
+	<div class="row padding">
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="https://wishesandblessings.net/blog/wp-content/uploads/2022/05/DSC00649-1-scaled.jpg">
+				<div class="card-body">
+					<h4 class="card-title">Oldage Home</h4>
+					<p class="card-text">John is an Interent
+						entrepreneur with almost 20 years of experience.
+					</p>
+					<a href="#" class="btn btn-outline-secondary">See Profile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="https://medicaldialogues.in/wp-content/uploads/2015/09/per-capita-expenditure.jpg">
+				<div class="card-body">
+					<h4 class="card-title">Health Care</h4>
+					<p class="card-text">To improve the wellness of the needy people of the Society, the health care program runs.</p>
+					<a href="#" class="btn btn-outline-secondary">See Profile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="https://www.globalgiving.org/pfil/1877/ph_1877_95501.jpg">
+				<div class="card-body">
+					<h4 class="card-title">Education</h4>
+					<p class="card-text">Phil is an developer with over 5 years
+					of web development experience.</p>
+					<a href="#" class="btn btn-outline-secondary">See Profile</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--- Connect -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h2>Connect</h2>
+		</div>
+		<div class="col-12 social padding">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-google-plus-g"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-youtube"></i></a>
+		</div>
+	</div>
+</div>
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding" data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="50"
+		data-aos-duration="1000">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Address</h5>
+				<!---<div class="footer-image">
+				<img src="data:image/jpeg;base64,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
+				AhCEH/9k="></div>-->
+				<hr class="light">
+				<p>+919293652786</p>
+				<p>sunrisetrust@gmail.com</p>
+				<p>street no:61,Lakshmi Nagar  </p>
+				<p>Hyderabad, Telangana, 500047</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Our hours</h5>
+				<hr class="light">
+				<p>Monday: 9am - 5pm</p>
+				<p>Saturday: 10am - 4pm</p>
+				<p>Sunday: Closed</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Service Area</h5>
+				<hr class="light">
+				<p>Hyderabad, Telangana, 500068</p>
+				<p>karimnagar, Telangana, 400042</p>
+				<p>Khammam, Telangana, 500039</p>
+				<p>Adilabad, Telangana, 300029</p>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; Copyright 2023 </h5>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+</body>
+</html>

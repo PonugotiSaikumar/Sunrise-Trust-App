@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="description" content="ETP Test Project - page 1">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Premier Event Technology</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<style>
+    @charset "utf-8";
+/* CSS Document */
+
+body, html {
+    height: 100%;
+	margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3 {color: #12a8e1;}
+div.logo {
+	max-width: 240px;
+	float: left;
+	padding: 5px;
+}
+/* ----------------MENU Style--------- */
+.nav {
+	float: right;
+}
+
+*{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
+
+nav{width:auto; float:right;}
+nav ul{display:table; float:right;}
+nav ul li{float:left;}
+nav ul li:last-child{padding-right:0px;}
+nav ul li a{color:#12a8e1; font-size:18px; padding: 25px 20px; display:inline-block; transition: all 0.5s ease 0s;text-transform: uppercase;;}
+nav ul li a:hover{background-color:#e16112; color:#fff; transition: all 0.5s ease 0s;}
+nav ul li a:hover i{color:#fff; transition: all 0.5s ease 0s;}
+nav ul li a i{padding-right:10px; color:#12a8e1; transition: all 0.5s ease 0s;}
+
+.toggle-menu ul{display:table; width:25px;}
+.toggle-menu ul li{width:100%; height:3px; background-color:#12a8e1; margin-bottom:4px;}
+.toggle-menu ul li:last-child{margin-bottom:0px;}
+
+input[type=checkbox], label{display:none;}
+
+@media only screen and (max-width: 980px) {
+	input[type=checkbox] {position: absolute; top: -9999px; left: -9999px; background:none;}
+	input[type=checkbox]:focus{background:none;}
+	label {float:right; padding:8px 0px; display:inline-block; cursor:pointer; }
+	input[type=checkbox]:checked ~ nav {display:block;}
+
+	nav{display:none; position:absolute; right:0px; top:53px; background-color:#12a8e1; padding:0px; z-index:99;}
+	nav ul{width:auto;}
+	nav ul li{float:none; padding:0px; width:100%; display:table;}
+	nav ul li a{color:#FFF; font-size:15px; padding:10px 20px; display:block; border-bottom: 1px solid rgba(225,225,225,0.1);}
+	nav ul li a i{color:#fff; padding-right:13px;}
+}
+
+@media only screen and (max-width: 360px) {
+	label{padding:5px 0px;}
+	nav{top:47px;}
+}
+/* ----------------END Menu Style--------- */
+
+/* ----------------HOME Banner Style--------- */
+.hero-image-home {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("https://github.com/webbysteph/HTML-CSS/blob/master/home-banner.jpg?raw=true");
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.hero-image-about {
+	background-image: linear-gradient(to top,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("https://content.jdmagicbox.com/comp/hyderabad/g8/040pxx40.xx40.220520154005.u1g8/catalogue/agape-children-home-pocharam-rangareddy-orphanages-for-children-ye58w2aped.jpg?clr=");
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+/* Style for Text on the main banner */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+h1{
+	text-transform: uppercase;
+	font-size: 3.5em;
+	font-family: 'Noto Sans SC', sans-serif;
+	font-weight: 100;
+	margin: 0;
+	text-shadow: 2px 0 #000;
+}
+.hero-subtitle {
+	font-size: 5.5em;
+	font-family:Playfair Display, serif;
+	margin: 0;
+	text-shadow:3px 3px 3px #ded8d6;
+    color: orangered;
+}
+@media screen and (max-width: 800px) {
+	h1{
+		font-size: 2.5em;
+	}
+	.hero-subtitle {
+		font-size: 2em;
+	}
+}
+@media screen and (max-width: 585px) {
+	h1{
+		font-size: 2em;
+	}
+	.hero-subtitle {
+		font-size: 1.5em;
+	}
+}
+/* ----------------END Main Banner Style--------- */
+
+/* ---------------- Main Content --------- */
+.content {
+	margin: auto;
+	max-width: 800px;
+	padding: 3em;
+	text-align: center;
+	color: #808080;
+}
+.blue-text{
+	color: #12a8e1;
+	text-transform: uppercase;
+	font-size: 1.3em;
+}
+#text {
+	padding-top: 1em;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+/* Homepage Images Grid */
+#imageGrid {
+	max-width: 1200px;
+	margin: auto;
+}
+@media (min-width: 500px) {
+	.grid {
+    	display: grid;
+    	grid-template-columns: repeat(2, 1fr);
+    	grid-gap: 2rem;
+  	}
+}
+@media (min-width: 800px) {
+	.grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+.grid-group {
+	margin-bottom: 3rem;
+	font-size: .7em;
+	padding: 0 10px;
+}
+@media (min-width: 500px) {
+	.grid-group {
+		margin-bottom: 0;
+  	}
+}
+.blue {
+	color: #12a8e1;
+	font-weight: bold;
+}
+/* ---------------- END Main Content --------- */
+
+/* ----------------  Footer  --------- */
+footer {
+	background-color: #F5F5F5;
+	color: #000;
+	margin-top: 2em;
+}
+.footerColumn {
+	float: left;
+	width: 50%;
+}
+.footerRow:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+@media screen and (max-width: 600px) {
+  .footerColumn {
+    width: 100%;
+	text-align: center;
+  }
+}
+/* Copyright Links */
+#Copyright {
+	padding-right: 100px;
+	padding-top: 1em;
+	text-align: right;
+}
+@media screen and (max-width: 600px) {
+	#Copyright {
+		width: 100%;
+	  text-align: center;
+	  padding-right: 0;
+  }
+}
+.footerMenu {
+	list-style-type: none;
+	display: inline;
+	padding-right: 1em;
+	padding-top: 1em;
+}
+.footerMenu a:link {
+	text-decoration: none;
+	color: #12a8e1;
+}
+.footerMenu a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+.footerMenu a:visited  {
+	text-decoration: none;
+	color: #12a8e1;
+}
+.footerMenu a:active  {
+	text-decoration: none;
+	color: #12a8e1;
+}
+.blueLink {color: #12a8e1;}
+
+/* Social Media Icons */
+#SocialMedia {
+	padding-left: 150px;
+}
+@media screen and (max-width: 900px) {
+  #SocialMedia {
+	padding-left: 0;
+  }
+}
+.fab {
+  padding: 10px;
+  font-size: 20px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fab:hover {
+    color: #12a8e1;
+}
+.fa-facebook-f {
+  color: #808080;
+}
+.fa-twitter {
+  color: #808080;
+}
+.fa-linkedin-in {
+  color: #808080;
+}
+
+/* ----------------  About Page  --------- */
+#services {
+	max-width: 1200px;
+	margin: auto;
+}
+
+@media (min-width: 500px) {
+	.grid-services {
+    	display: grid;
+    	grid-template-columns: repeat(2, 1fr);
+    	grid-gap: 2rem;
+  	}
+}
+@media (min-width: 800px) {
+	.grid-services {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+.grid-group-services {
+	margin-bottom: 3rem;
+	font-size: .7em;
+	padding: 0 10px;
+}
+@media (max-width: 500px) {
+	.grid-group-services {
+		height: 100px;
+  	}
+}
+.fas  {
+  padding: 10px;
+  font-size: 50px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+@media (max-width: 950px) {
+	.fas {
+		font-size: 35px;
+		width: 40px;
+  	}
+}
+@media (max-width: 650px) {
+	.fas {
+		font-size: 25px;
+		width: 30px;
+  	}
+}
+.fa-video, .fa-volume-up, .fa-bolt, .fa-pencil-ruler, .fa-paint-brush, .fa-ship {
+	color: #12a8e1;
+}
+.services-icon {
+	float: left;
+}
+.services-description {
+	float: right;
+	width: 70%;
+	font-size: 1.3em;
+	color: #808080;
+}
+
+</style>
+
+
+
+
+
+
+
+</head>
+<body>
+	<div class="hero-image-about">
+		<div class="logo">
+			<a href="/premier/index.html"><img src="data:image/jpeg;base64,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
+      AEAQBAEAQBAEAQBAf//Z" alt="Logo" height="80px" width="90px"/></a>
+		</div>
+		<label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
+		<input type="checkbox" id="toggle-1">
+		<nav>
+			<ul>
+				<!-- Edit Menu Links -->
+				<li class="nav-item">
+					<a class="nav-link" href="/home.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Team</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Sponsership</a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link" href="/gallery.html">Gallery</a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+				<!-- END Menu Links -->
+			</ul>
+		</nav>
+		
+		<!-- Edit Banner Text -->
+		<div class="hero-text">
+			<h1>About Us</h1>
+			<p class="hero-subtitle">SUNRISE TRUST</p>
+		</div>
+		<!-- END Banner Text -->
+	</div>
+	<main>
+		<article class="main">
+			<section class="content">
+				<!-- Edit Homepage Text -->
+				<p class="blue-text">Our <strong>Goal</strong></p>
+				<p id="text">From the boardroom to the arena and every place in between, Premier is a full-service event company taht provides audiovisual servies for events of all sizes.</p>
+				<!-- END Homepage Text -->
+			</section>
+			<div id="services">
+				<section class="grid-services">
+				  	<!-- Edit Services Section -->
+					<div class="grid-group-services">
+						<div class="grid-group-services-box">
+							<div class="services-icon">
+								<i class="fas fa-video"></i>
+							</div>
+							<div class="services-description">
+							<!-- Edit Video Section -->
+								<h3>Video</h3>
+								<p>From projection and LED to broadcast 4k multi-cam systems, Premier has the technology and expereince to effectively deliver your message. Our inventory includes reliable brands like Sony, Christie, EIKI, Blackmagic Design, Barco and NewTek.</p>
+							<!-- END Video Section -->
+							</div>
+						</div>
+					</div>
+					<div class="grid-group-services">
+						<div class="grid-group-services-box">
+							<div class="services-icon">
+								<i class="fas fa-volume-up"></i>
+							</div>
+							<div class="services-description">
+								<!-- Edit Audio Section -->
+								<h3>Audio</h3>
+								<p>Coupled with passionate, experience sound engineers, we offer full-service audio production for any size event. Our extensive inventory includes YAHAMA, Avid, Nexo, Shure, QSC and d&amp;b audiotechlink.</p>
+								<!-- END Audio Section -->
+							</div>
+						</div>
+					</div>
+					<div class="grid-group-services">
+						<div class="grid-group-services-box">
+							<div class="services-icon">
+								<i class="fas fa-bolt"></i>
+							</div>
+							<div class="services-description">
+								<!-- Edit Lighting Section -->
+								<h3>Lighting</h3>
+								<p>Premier creates versitile lighting designs for maximum impact. Our customized inventory of rigging, truss and lighting fictures brand include Robe, Tyle Truss, Avolites, Chroma-Q and High-End Systems.</p>
+								<!-- END Lighting Section -->
+							</div>
+						</div>
+					</div>
+					 <div class="grid-group-services">
+						<div class="grid-group-services-box">
+							<div class="services-icon">
+								<i class="fas fa-pencil-ruler"></i>
+							</div>
+							<div class="services-description">
+								<!-- Edit Scenic Design Section -->
+								<h3>Scenic Design</h3>
+								<p>Our passion is to help our cutomer create an experience that will have a lasting impact on their audience. Our in-house design and fabrication department allows us to create scalabel and modular solutions that are uniquely targeted for your audience.</p>
+								<!-- END Scenic Design Section -->
+							</div>
+						</div>
+					</div>
+					<div class="grid-group-services">
+						<div class="grid-group-services-box">
+							<div class="services-icon">
+								<i class="fas fa-paint-brush"></i>
+							</div>
+							<div class="services-description">
+								<!-- Edit Creative Services Section -->
+								<h3>Creative Services</h3>
+								<p>From initial CAD design to final execution, Premier has an experienced creative team dedicated to making your event one to be remembered.</p>
+								<!-- END Creative Services Section -->
+							</div>
+						</div>
+					</div>
+					<div class="grid-group-services">
+						<div class="grid-group-services-box">
+							<div class="services-icon">
+								<i class="fas fa-ship"></i>
+							</div>
+							<div class="services-description">
+								<!-- Edit Conventions Section -->
+								<h3>Conventions</h3>
+								<p>As the onsite, preferred partner for Detroit's COBO Center, Premier provides in-depth knowledge of the facility. From exhibits, to main halt, to everything in between, we have the technology and crew to make it happen.</p>
+								<!-- END Conventions Section -->
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- END Services Section -->
+			</div>
+		</article>
+	</main>
+	<footer class="footerRow">
+		<div class="footerColumn">
+			<span id="SocialMedia">
+				<a href="https://www.facebook.com/premiereventtechnology?fref=ts" target="_blank" class="fab fa-facebook-f"></a>
+				<a href="https://twitter.com/PremierEventAV" target="_blank" class="fab fa-twitter"></a>
+				<a href="https://www.linkedin.com/company/premier-creative-gorup/?trk=prof-following-company-logo" target="_blank" class="fab fa-linkedin-in"></a>
+			</span>
+		</div>
+		<div class="footerColumn">
+				<ol id="Copyright">
+					<!-- Edit Footer Links -->
+					<li class="footerMenu"><a href="#" class="blueLink">Terms of Use</a></li>
+					<li class="footerMenu"><a href="#" class="blueLink">Privacy Policy</a></li>
+					<!-- END Footer Links -->
+				</ol>
+		</div>
+	</footer>
+<script>
+	function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "menu") {
+			x.className += " responsive";
+		  } else {
+			x.className = "menu";
+		  }
+	} 
+</script>
+</body>
+</html>
